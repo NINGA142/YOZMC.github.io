@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="Home.css">
 </head>
 
-<body onload="load()">
+<body onload="load()" onselectstart="return false">
   
   <div class="Showcase">
     
@@ -29,7 +29,11 @@
       <div class="mySlides fade">
         <img src="/Home page/Posters/Poster2.png" style="width:100%" class="pos">
       </div>
-
+      
+      <div class="mySlides fade">
+        <img src="/Home page/Posters/Poster3.png" style="width:100%" class="pos">
+      </div>
+      
       <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
       <div class="next" onclick="plusSlides(1)">&#10095;</div>
     </div>
@@ -47,7 +51,6 @@
       <div></div>
       <div></div>
     </div>
-    =
     <div class="menu-items">
     <a href="#"><h2><img src="/Home page/Icons/home.png">  HOME</h2></a>
     <a href="#"><h2><img src="/Home page/Icons/Skins.png"> Skins</h2></a>
@@ -57,11 +60,24 @@
   </div>
   
   <div class="Carts">
-    <div class="cart">
-      <img src="">
+    
+    <div class="cart1">
+      <img src="/Home page/Posters/Poster1.png">
     </div>
+    
+    <div class="cart2">
+      <img src="/Home page/Posters/Poster2.png">
+    </div>
+    
+    <div class="cart3">
+      <img src="/Home page/Posters/Poster3.png">
+    </div>
+    
   </div>
   
+<div class="end">
+  
+</div>
 </body>
 
  <script src="Home.js"></script>
