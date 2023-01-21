@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YOZMC || HOME</title>
+  <link rel="stylesheet" href="Home.css">
+  <link rel="stylesheet" href="..\_Css\Common.css">
+</head>
+
+<body onload="Onload()">
+  <!--all of menu-->
+  <div class="menu-btn" onclick="menu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="menu" id="mno">
+    <ul>
+      <li>
+        <img src="textures/zuhause.png"> HOME
+      </li>
+      <li>
+        <img src="textures/map.png"> Maps
+      </li>
+      <li>
+        <img src="textures/add-on.png"> AddOns
+      </li>
+      <li>
+        <img src="textures/t-shirt.png"> Skins
+      </li>
+    </ul>
+  </div>
+
+  <!--all of header-->
+
+  <div class="header">
+    <div class="background" id="bk"></div>
+    <div class="slider">
+      <div class="npbtn">
+        <div class="cont">
+          <div class="pabtns">
+            <div class="pre" onclick="plusSlides(-1)">
+              <p><</p>
+            </div>
+
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+
+
+            <div class="next" onclick="plusSlides(1)">
+              <p>></p>
+            </div>
+            <progress max="980" id="prog"></progress>
+          </div>
+        </div>
+      </div>
+      <div class="showcase">
+        <img src="Posters/Poster3.png" class="mySlides">
+        <img src="Posters/Poster2.png" class="mySlides">
+        <img src="Posters/Poster1.png" class="mySlides">
+        <img src="Posters/Poster4.png" class="mySlides">
+      </div>
+    </div>
+  </div>
+
+  <!--all of best items-->
+
+  <div class="score-board">
+    <div class="container">
+      <div class="SBone">
+        <div class="maps">
+          <div class="SBtitle">
+            <p>Best Map</p>
+          </div>
+          <div class="SBbase">
+            <img src="/HOME/Posters/Icon1.png">
+            <div>
+            <p>Map name 1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="SBtow">
+        <div class="skins">
+          <div class="SBtitle">
+            <p>Best skin</p>
+          </div>
+          <div class="SBbase">
+            <img src="/HOME/Posters/Icon1.png">
+            <div>
+            <p>Map name 2</p>
+            </div>
+          </div>
+        </div>
+        <div class="AddOns">
+          <div class="SBtitle">
+            <p>Best AddOns</p>
+          </div>
+          <div class="SBbase">
+            <img src="/HOME/Posters/Icon1.png">
+            <div>
+            <p>Map name 3</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--all of info-->
+  <div class="Info">
+    <div class="container">
+      <div class="Stext">
+        <h3>YOZ MC</h3>
+        <p>YOZMC team is a friendly team to build maps, skins, extensions and any other Items for Minecraft.</p>
+      </div>
+    </div>
+  </div>
+  
+  <br><br>
+</body>
+
+<script src="../_JavaScript/Common.js"></script>
+<script src="Home.js"></script>
+
+</html>

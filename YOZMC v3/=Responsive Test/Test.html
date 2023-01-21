@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsible Test</title>
+  <link rel="stylesheet" href="Test.css">
+</head>
+
+<body>
+  
+  <div class="base">
+    
+    <input type="range" id="width" value="400" max="400" oninput="change()">
+    
+    <input type="range" id="height" value="300" max="300" oninput="change()">
+    
+    <div class="mini-pc" id="mc"></div>
+    
+    <button id="Go" onclick="go()">GO</button>
+    
+    <p id="txtw">width = 2000 px</p>
+    <p id="txth"> height = 1500 px</p>
+    
+    <input type="range" value="1" max="1" id="btn">
+    
+  </div>
+  
+  <iframe src="/HOME/Home.html" width="100%" height="50%" id="page">
+  </iframe>
+  
+</body>
+<script src="Test.js"></script>
+</html>

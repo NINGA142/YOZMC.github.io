@@ -1,0 +1,87 @@
+function Onload() {
+  var poster = document.getElementById('poster1')
+  poster.style.display = 'block'
+}
+var num = 2
+var numx = 1
+
+function next()
+{
+  var lengthOfImg = document.querySelectorAll("#SC > img").length;
+
+  console.log(lengthOfImg);
+
+  var posterX = document.getElementById('poster' + num)
+  var posterN = document.getElementById('poster' + numx)
+  if (num <= lengthOfImg) {
+    posterN.style.display = 'none';
+    numx++
+    num++
+    posterX.style.display = 'block';
+  } else if (num > lengthOfImg) {
+    document.getElementById('poster' + lengthOfImg).style.display = 'none'
+    document.getElementById('poster1').style.display = 'block'
+    num = 2
+    numx = 1
+  }
+}
+function pre()
+{
+  var lengthOfImg = document.querySelectorAll("#SC > img").length;
+
+  console.log(lengthOfImg+'x');
+
+  var posterX = document.getElementById('poster' + numx)
+  var posterN = document.getElementById('poster' + num)
+  if (num <= lengthOfImg) {
+    posterN.style.display = 'none';
+    numx--
+    num--
+    posterX.style.display = 'block';
+  } else if (num > lengthOfImg) {
+    document.getElementById('poster' + lengthOfImg).style.display = 'none'
+    document.getElementById('poster1').style.display = 'block'
+    num = 2
+    numx = 1
+  }
+}
+
+html
+
+  <!--header-->
+
+  <div class="header">
+    <div class="background"></div>
+    <div class="slider">
+      <div class="showcase">
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img src="Posters/Poster1.png">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="Posters/Poster2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="Posters/Poster3.png" style="width:100%">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      </div>
+    </div>
+  </div>
